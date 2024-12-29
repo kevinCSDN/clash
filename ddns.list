@@ -1,0 +1,4 @@
+# NAME: DDNS提供商走直连
+
+DOMAIN-KEYWORD,noip
+DOMAIN-KEYWORD,dynu
