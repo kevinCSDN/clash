@@ -1,12 +1,18 @@
 ;常访问的国内网站在前面
 ;1、域名组(规则集rule_list)
 ruleset=🌍 me,https://raw.githubusercontent.com/kevinCSDN/clash/refs/heads/main/mylist.list
-ruleset=🌍 me,[]GEOIP,CN
 ruleset=📹 油管视频,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
 ruleset=👽 AI1,https://raw.githubusercontent.com/liandu2024/clash/refs/heads/main/AI.list
 ruleset=👽 AI2,https://raw.githubusercontent.com/liandu2024/clash/refs/heads/main/AI2.list
 ruleset=📢 谷歌,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list
 ruleset=📘 GitHub,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GitHub/GitHub.list
+ruleset=👯‍♂️ TikTok,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/TikTok/TikTok.list
+ruleset=🙋 Telegram,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.list
+;ruleset=📀 流媒体,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.list
+ruleset=📀 流媒体,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/HBO/HBO.list
+ruleset=📀 流媒体,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list
+ruleset=📀 流媒体,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.list
+ruleset=📀 流媒体,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.list
 ruleset=🌍 国内,https://raw.githubusercontent.com/kevinCSDN/ACL4SSR/refs/heads/master/Clash/ChinaIp.list
 ruleset=🌍 国内,https://raw.githubusercontent.com/kevinCSDN/ACL4SSR/refs/heads/master/Clash/ChinaDomain.list
 ruleset=🌍 国内,https://raw.githubusercontent.com/kevinCSDN/ACL4SSR/refs/heads/master/Clash/ChinaCompanyIp.list
@@ -15,26 +21,19 @@ ruleset=🌍 国内,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Cla
 ruleset=🌍 国内,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
 ruleset=🌍 国内,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
 ruleset=🌍 国内,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
-ruleset=👯‍♂️ TikTok,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/TikTok/TikTok.list
-ruleset=🙋 Telegram,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.list
-;ruleset=📀 流媒体,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.list
-ruleset=📀 流媒体,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/HBO/HBO.list
-ruleset=📀 流媒体,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list
-ruleset=📀 流媒体,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.list
-ruleset=📀 流媒体,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.list
 ruleset=🐟 漏网之鱼,[]FINAL
 
 ;2、策略组（域名组-节点组）(出站outbounds,不同通道)
-custom_proxy_group=🌍 me`select`[]DIRECT`[]所有-自动`[]港台日新韩-自动`[]台日新韩-自动`[]香港-自动`[]台湾-自动`[]日本-自动`[]新加坡-自动`[]韩国-自动`[]美国-自动`[]其他-自动`[]REJECT
+custom_proxy_group=🌍 me`select`[]DIRECT
 custom_proxy_group=📹 油管视频`select`[]香港-自动`[]DIRECT`[]所有-自动`[]港台日新韩-自动`[]台日新韩-自动`[]台湾-自动`[]日本-自动`[]新加坡-自动`[]韩国-自动`[]美国-自动`[]其他-自动`[]REJECT
 custom_proxy_group=👽 AI1`select`[]美国-自动`[]DIRECT`[]所有-自动`[]港台日新韩-自动`[]台日新韩-自动`[]香港-自动`[]台湾-自动`[]日本-自动`[]新加坡-自动`[]韩国-自动`[]其他-自动`[]REJECT
 custom_proxy_group=👽 AI2`select`[]日本-自动`[]DIRECT`[]所有-自动`[]港台日新韩-自动`[]台日新韩-自动`[]香港-自动`[]台湾-自动`[]新加坡-自动`[]韩国-自动`[]美国-自动`[]其他-自动`[]REJECT
 custom_proxy_group=📢 谷歌`select`[]香港-自动`[]DIRECT`[]所有-自动`[]港台日新韩-自动`[]台日新韩-自动`[]台湾-自动`[]日本-自动`[]新加坡-自动`[]韩国-自动`[]美国-自动`[]其他-自动`[]REJECT
 custom_proxy_group=📘 GitHub`select`[]所有-自动`[]香港-自动`[]DIRECT`[]港台日新韩-自动`[]台日新韩-自动`[]台湾-自动`[]日本-自动`[]新加坡-自动`[]韩国-自动`[]美国-自动`[]其他-自动`[]REJECT
-custom_proxy_group=🌍 国内`select`[]DIRECT`[]所有-自动`[]港台日新韩-自动`[]台日新韩-自动`[]香港-自动`[]台湾-自动`[]日本-自动`[]新加坡-自动`[]韩国-自动`[]美国-自动`[]其他-自动`[]REJECT
 custom_proxy_group=👯‍♂️ TikTok`select`[]所有-自动`[]DIRECT`[]港台日新韩-自动`[]台日新韩-自动`[]香港-自动`[]台湾-自动`[]日本-自动`[]新加坡-自动`[]韩国-自动`[]美国-自动`[]其他-自动`[]REJECT
 custom_proxy_group=🙋 Telegram`select`[]香港-自动`[]DIRECT`[]所有-自动`[]港台日新韩-自动`[]台日新韩-自动`[]台湾-自动`[]日本-自动`[]新加坡-自动`[]韩国-自动`[]美国-自动`[]其他-自动`[]REJECT
 custom_proxy_group=📀 流媒体`select`[]香港-自动`[]DIRECT`[]所有-自动`[]港台日新韩-自动`[]台日新韩-自动`[]台湾-自动`[]日本-自动`[]新加坡-自动`[]韩国-自动`[]美国-自动`[]其他-自动`[]REJECT
+custom_proxy_group=🌍 国内`select`[]DIRECT
 custom_proxy_group=🐟 漏网之鱼`select`[]所有-自动`[]DIRECT`[]港台日新韩-自动`[]台日新韩-自动`[]香港-自动`[]台湾-自动`[]日本-自动`[]新加坡-自动`[]韩国-自动`[]美国-自动`[]其他-自动`[]REJECT
 
 ;3、节点组
